@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { PixelNavbar, PixelFooter, Frame } from "./components"; 
 import "./styles/App.css"; 
 
-
 function App() {
   const [allPetStats, setAllPetStats] = useState({
     fox: { hunger: 80, happiness: 60, health: 90 },
