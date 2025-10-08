@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import feedIcon from '../assets/feed.png';
-import petIcon from '../assets/hand.png';
-import playIcon from '../assets/Egg.png';
-import feedFrame from '../assets/FrameSecondary.png';
-import petFrame from '../assets/FrameSecondary.png';
-import playFrame from '../assets/FrameSecondary.png';
+import feedIcon from '../../assets/feed.png';
+import petIcon from '../../assets/hand.png';
+import playIcon from '../../assets/Egg.png'; // asegúrate que esté en minúsculas
+import feedFrame from '../../assets/FrameSecondary.png';
+import petFrame from '../../assets/FrameSecondary.png';
+import playFrame from '../../assets/FrameSecondary.png';
+
 
 function ActionButtons({ setPetStats, onAction }) {
   const [animatingButton, setAnimatingButton] = useState(null);

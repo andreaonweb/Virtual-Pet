@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import foxImage from '../assets/Fox.png';
-import unicornImage from '../assets/unicorn.png';
-import pandaImage from '../assets/panda.png';
-import pomImage from '../assets/pom.png';
-import totoroImage from '../assets/totoro.png';
+import foxImage from '../../assets/Fox.png';
+import unicornImage from '../../assets/unicorn.png';
+import pandaImage from '../../assets/panda.png';
+import pomImage from '../../assets/pom.png';
+import totoroImage from '../../assets/totoro.png';
+
 
 function PetSelector({ selectedPet, onPetChange, allPetStats }) {
   const [animatingPet, setAnimatingPet] = useState(null);
@@ -37,15 +38,15 @@ function PetSelector({ selectedPet, onPetChange, allPetStats }) {
   const getStatusDisplay = (status) => {
     switch (status) {
       case 'critical':
-        return { color: '#ff4444', emoji: '💀', text: 'CRITICAL!' };
+        return { color: '#ff4444', text: 'CRITICAL!' };
       case 'warning':
-        return { color: '#ff8800', emoji: '⚠️', text: 'NEEDS CARE' };
+        return { color: '#ff8800', text: 'NEEDS CARE' };
       case 'normal':
-        return { color: '#ffaa00', emoji: '😐', text: 'OK' };
+        return { color: '#ffaa00', text: 'OK' };
       case 'good':
-        return { color: '#44aa44', emoji: '😊', text: 'HAPPY' };
+        return { color: '#44aa44', text: 'HAPPY' };
       default:
-        return { color: '#666666', emoji: '❓', text: '???' };
+        return { color: '#666666', text: '???' };
     }
   };
 
@@ -159,14 +160,14 @@ function PetSelector({ selectedPet, onPetChange, allPetStats }) {
                   position: 'absolute',
                   top: '-3px',
                   left: '-3px',
-                  width: '20px',
-                  height: '20px',
+                  width: '30px',
+                  height: '30px',
                   backgroundColor: '#ff4444',
                   borderRadius: '50%',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontSize: '10px',
+                  fontSize: '20px',
                   color: 'white',
                   fontWeight: 'bold',
                   animation: 'pulse 1s infinite',

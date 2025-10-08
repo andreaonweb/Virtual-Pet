@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import frameImage from '../assets/FrameMain.png';
-import Needs from './Needs';
-import GenericPet from './GenericPet';
-import ActionButtons from './ActionButtons';
-import PetSelector from './PetSelector';
+import frameImage from '../../assets/FrameMain.png'; 
+import Needs from '../pets/Needs';
+import GenericPet from '../pets/GenericPet';
+import ActionButtons from '../ui/ActionButtons';
+import PetSelector from '../pets/PetSelector';
+
 
 function Frame({ petStats, setPetStats, currentPet, onPetChange, allPetStats }) {
   const [petAnimationTrigger, setPetAnimationTrigger] = useState(0);
@@ -28,8 +29,7 @@ function Frame({ petStats, setPetStats, currentPet, onPetChange, allPetStats }) 
   // Función para cambiar de mascota
   const handlePetChange = (newPetType) => {
     setSelectedPet(newPetType);
-    if (onPetChange) onPetChange(newPetType); // Notificar al App
-    // Opcional: resetear animaciones al cambiar de mascota
+    if (onPetChange) onPetChange(newPetType); 
     setPetAnimationTrigger(prev => prev + 1);
     setLastActionType('pet');
   };

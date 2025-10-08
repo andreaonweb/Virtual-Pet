@@ -1,7 +1,8 @@
 import React from 'react';
-import hungerIcon from '../assets/Food.png';
-import happinessIcon from '../assets/Happiness.png';
-import healthIcon from '../assets/Heart.png';
+import hungerIcon from '../../assets/Food.png';
+import happinessIcon from '../../assets/Happiness.png';
+import healthIcon from '../../assets/Heart.png';
+
 
 function Needs({ petStats }) {
   const getBarColor = (type) => {

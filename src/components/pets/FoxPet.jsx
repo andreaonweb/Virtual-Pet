@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import foxImage from '../assets/Fox.png'; 
+import foxImage from '../../assets/Fox.png';
+
 
 function FoxPet({ petStats, onInteract, triggerAnimation, actionType }) {
   const [isAnimating, setIsAnimating] = useState(false);

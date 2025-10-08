@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import foxImage from '../assets/Fox.png';
-import unicornImage from '../assets/unicorn.png';
-import pandaImage from '../assets/panda.png';
-import pomImage from '../assets/pom.png';
-import totoroImage from '../assets/totoro.png';
+import foxImage from '../../assets/Fox.png';
+import unicornImage from '../../assets/unicorn.png';
+import pandaImage from '../../assets/panda.png';
+import pomImage from '../../assets/pom.png';
+import totoroImage from '../../assets/totoro.png';
+
 
 function GenericPet({ petType, petStats, onInteract, triggerAnimation, actionType }) {
   const [isAnimating, setIsAnimating] = useState(false);
