@@ -5,7 +5,8 @@ Take care of your pet by **feeding**, **petting**, and **playing** with it. Keep
 
 ---
 ## 📸 Preview
-<img width="1712" height="870" alt="image" src="https://github.com/user-attachments/assets/f292c923-22e6-48a8-9bdd-f18b865dda53" />
+<img width="1251" height="908" alt="image" src="https://github.com/user-attachments/assets/7232f3ef-5bf4-4ca0-915a-fbc8674f30a0" />
+
 
 ## 🚀 Features  
 - 🥩 **Feed your pet** to keep it full.  
